@@ -1,0 +1,93 @@
+      #contain {
+        margin: 10px auto;
+		margin-top: 150px;
+        width: auto;
+        padding: 20px;
+      }
+      #title {
+        padding: 20px;
+		margin-top: 15px;
+		text-align: center;
+}
+      #text {
+        padding: 10px;
+		margin-top: 2.5%;
+		margin-bottom: 10px;
+		text-align: center;
+      }
+      #footer {
+        clear: both;
+        padding: 10px;
+		margin-left: 30%;
+		margin-right: 30%;
+		
+      }
+      @media (max-width : 383px ){
+        #contain {
+          width: auto;
+        }
+      }
+
+/* BUTTON */
+button,
+button::after {
+  transition: all 0.5s;
+}
+
+button {
+  background: none;
+  border: 2px solid #000;
+  border-radius: 40px;
+  color: #000;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 12.5px 60px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: #8D8D8D;
+  border: 2px solid #8D8D8D;
+}
+
+#title {
+	animation-duration: 1s; animation-name: slidein;
+}
+
+@keyframes slidein
+{ from {
+	margin-left: 100%; width: 300%
+	} 
+	to 
+	{
+		margin-left: 0%; width: 100%;
+	}
+}
+
+#text {
+	animation-duration: 1.5s; animation-name: slidein;
+}
+
+@keyframes slidein
+{ from {
+	margin-left: 100%; width: 300%
+	} 
+	to 
+	{
+		margin-left: 0%; width: 100%;
+	}
+}
+
+@font-face {
+    font-family: 'Godo';
+    font-weight: 500;
+    src: url('fonts/GodoM.woff') format('woff');
+}
+@font-face {
+    font-family: 'Godo';
+    font-weight: 700;
+    src: url('fonts/GodoB.woff') format('woff');
+}
